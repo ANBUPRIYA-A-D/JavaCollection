@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+class Even{
+    public static int evenOdd(List<Integer> l){
+        for(int i:l){
+            if(i%2==0){
+                System.out.println(i);
+            }
+        }
+        return 0;
+    }
+}
+class Odd{
+    public static void main(String[] args){
+        ArrayList<Integer> list=new ArrayList<>();
+        int N=10;
+        for(int i=1;i<=N;i++){
+            list.add(i);
+        }
+        Even s=new Even();
+        s.evenOdd(list);
+    }
+}
