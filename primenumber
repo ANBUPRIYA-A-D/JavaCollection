@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+public class Prime{
+    public static void main(String[] args){
+        System.out.println(prime(3,10));
+    }
+    public static List<Integer> prime(int l,int u){
+        List<Integer> numbers=new ArrayList<>();
+        for(int i=l;i<=u;i++){
+            for(int j=2;j<u;j++){
+                if(i%j==0){
+                    break;
+                }
+                else{
+                    numbers.add(i);
+                }
+            }
+        }
+        return numbers;
+    }
+} 
