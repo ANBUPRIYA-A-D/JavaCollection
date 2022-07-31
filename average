@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+class Result{
+    public static int calculateAverage(List<Integer> inputArray){
+        int sum=0;
+        for(int i:inputArray){
+            sum+=i;
+        }
+        return sum;
+    }
+}
+class Solution{
+    public static void main(String[] args){
+        int N=3;
+        ArrayList<Integer> list=new ArrayList<>();
+        for(int i=1;i<=N;i++){
+            list.add(i);
+        }
+        Result r=new Result();
+        int n=r.calculateAverage(list);  
+        System.out.println("sum is "+n);
+    }
+}
